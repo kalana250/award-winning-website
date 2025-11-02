@@ -32,7 +32,6 @@
 
 All design credits go to **[Zentry](https://zentry.com/)**. This project is created purely for **educational purposes** and is not intended for commercial use or public deployment.
 
-
 ## 🚨 Tutorial
 
 This repository contains the code corresponding to an in-depth tutorial available on our YouTube channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
@@ -86,7 +85,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/award-winning-website.git
+git clone https://github.com/kalana250/award-winning-website.git
 cd award-winning-website
 ```
 
@@ -393,7 +392,7 @@ body {
   <summary><code>components/RoundedCorners.jsx</code></summary>
 
 ```js
-import React from 'react'
+import React from "react";
 
 const RoundedCorners = () => {
   return (
@@ -403,28 +402,20 @@ const RoundedCorners = () => {
     >
       <defs>
         <filter id="flt_tag">
-          <feGaussianBlur
-            in="SourceGraphic"
-            stdDeviation="8"
-            result="blur"
-          />
+          <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
           <feColorMatrix
             in="blur"
             mode="matrix"
             values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
             result="flt_tag"
           />
-          <feComposite
-            in="SourceGraphic"
-            in2="flt_tag"
-            operator="atop"
-          />
+          <feComposite in="SourceGraphic" in2="flt_tag" operator="atop" />
         </filter>
       </defs>
     </svg>
-  )
-}
-export default RoundedCorners
+  );
+};
+export default RoundedCorners;
 ```
 
 </details>
